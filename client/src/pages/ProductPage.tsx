@@ -43,9 +43,14 @@ export default function ProductPage() {
 
   const handleContactConfirm = () => {
     setContactModalOpen(false);
+    // Redirect to WhatsApp with the inquiry message
+    const message = `Hi, I'm interested in ${product?.name}.`;
+    const whatsappUrl = `https://wa.me/9639648053?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    
     toast({
-      title: "Inquiry Sent",
-      description: `Your inquiry about ${product?.name} has been sent. We'll contact you soon.`,
+      title: "Redirecting to WhatsApp",
+      description: `You're being redirected to WhatsApp to inquire about ${product?.name}.`,
     });
   };
 

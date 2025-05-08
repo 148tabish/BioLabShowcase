@@ -26,7 +26,8 @@ export default function ContactModal({ isOpen, onClose, productName, onConfirm }
         </div>
         <div className="bg-secondary p-4 rounded-lg mb-4">
           <p className="font-medium text-text">
-            Hi, I'm interested in <span className="text-primary">{productName}</span>.
+            Hi, I'm interested in <span className="text-primary">{productName}</span>. 
+            <span className="block mt-2 text-sm text-text-light">You will be redirected to WhatsApp at: 9639648053</span>
           </p>
         </div>
         <DialogFooter className="sm:justify-end">
