@@ -3,6 +3,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import HomePage from "@/pages/HomePage";
 import ProductPage from "@/pages/ProductPage";
+import AboutPage from "@/pages/AboutPage";
+import ContactPage from "@/pages/ContactPage";
+import VisionPage from "@/pages/VisionPage";
 import NotFound from "@/pages/not-found";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -15,6 +18,9 @@ function Router() {
         <Switch>
           <Route path="/" component={HomePage} />
           <Route path="/product/:id" component={ProductPage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/contact" component={ContactPage} />
+          <Route path="/vision" component={VisionPage} />
           <Route component={NotFound} />
         </Switch>
       </main>

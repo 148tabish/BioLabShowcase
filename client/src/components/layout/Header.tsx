@@ -16,19 +16,19 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <a href="#" className="text-text hover:text-primary font-medium">
-                Categories
-              </a>
+              <Link href="/vision" className="text-text hover:text-primary font-medium">
+                Our Vision
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-text hover:text-primary font-medium">
+              <Link href="/about" className="text-text hover:text-primary font-medium">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-text hover:text-primary font-medium">
+              <Link href="/contact" className="text-text hover:text-primary font-medium">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

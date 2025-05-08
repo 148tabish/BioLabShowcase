@@ -1,3 +1,5 @@
+import { Link } from "wouter";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 py-8 text-white mt-12 shadow-md">
@@ -13,24 +15,24 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Product Categories</h4>
             <ul className="text-sm space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link href="/" className="text-gray-300 hover:text-white">
                   Research Peptides
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link href="/" className="text-gray-300 hover:text-white">
                   Laboratory Equipment
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link href="/" className="text-gray-300 hover:text-white">
                   Analytical Standards
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link href="/" className="text-gray-300 hover:text-white">
                   Reference Materials
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -38,24 +40,24 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Information</h4>
             <ul className="text-sm space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link href="/about" className="text-gray-300 hover:text-white">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Terms & Conditions
-                </a>
+                <Link href="/vision" className="text-gray-300 hover:text-white">
+                  Our Vision
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Privacy Policy
-                </a>
+                <Link href="/contact" className="text-gray-300 hover:text-white">
+                  Contact Us
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Shipping Information
-                </a>
+                <Link href="/" className="text-gray-300 hover:text-white">
+                  Terms & Privacy
+                </Link>
               </li>
             </ul>
           </div>
@@ -72,7 +74,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <i className="fas fa-map-marker-alt"></i>
-                <span>123 Science Park, Research City</span>
+                <span>123 Science Park, Research City, UK</span>
               </li>
             </ul>
           </div>
