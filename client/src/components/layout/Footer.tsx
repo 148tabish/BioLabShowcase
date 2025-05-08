@@ -4,37 +4,19 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 py-8 text-white mt-12 shadow-md">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-bold text-lg mb-4">BioLab Products</h3>
             <p className="text-sm text-gray-300">
               Providing high-quality laboratory products for research professionals worldwide.
             </p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Product Categories</h4>
-            <ul className="text-sm space-y-2">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-white">
-                  Research Peptides
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-white">
-                  Laboratory Equipment
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-white">
-                  Analytical Standards
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-white">
-                  Reference Materials
-                </Link>
-              </li>
-            </ul>
+            <div className="mt-4">
+              <p className="text-sm text-gray-300">
+                123 Science Park<br/>
+                Research City, RC4 2LP<br/>
+                United Kingdom
+              </p>
+            </div>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Information</h4>
@@ -55,7 +37,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white">
+                <Link href="/terms" className="text-gray-300 hover:text-white">
                   Terms & Privacy
                 </Link>
               </li>
@@ -73,8 +55,8 @@ export default function Footer() {
                 <span>+1 (555) 123-4567</span>
               </li>
               <li className="flex items-center gap-2">
-                <i className="fas fa-map-marker-alt"></i>
-                <span>123 Science Park, Research City, UK</span>
+                <i className="fas fa-clock"></i>
+                <span>Monday - Friday: 9:00 AM - 5:00 PM GMT</span>
               </li>
             </ul>
           </div>
