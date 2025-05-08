@@ -6,8 +6,14 @@ import ProductDetail from "@/components/products/ProductDetail";
 import ContactModal from "@/components/products/ContactModal";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
-
+import { useEffect } from "react";
 export default function ProductPage() {
+      useEffect(() => {
+   window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  }, []);
   const [, setLocation] = useLocation();
   const [match, params] = useRoute("/product/:id");
   const [contactModalOpen, setContactModalOpen] = useState(false);

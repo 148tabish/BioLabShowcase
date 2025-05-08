@@ -1,6 +1,12 @@
 import { Link } from "wouter";
-
+import { useEffect } from "react";
 export default function TermsPage() {
+      useEffect(() => {
+   window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  }, []);
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">

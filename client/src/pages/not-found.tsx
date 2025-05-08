@@ -1,7 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { useEffect } from "react";
 import { AlertCircle } from "lucide-react";
 
 export default function NotFound() {
+      useEffect(() => {
+   window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  }, []);
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
       <Card className="w-full max-w-md mx-4">
