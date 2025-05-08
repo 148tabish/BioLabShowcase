@@ -1,8 +1,9 @@
-import * as React from "react";
+
+import { useState } from "react";
 import { Link } from "wouter";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-10">
