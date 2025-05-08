@@ -10,6 +10,7 @@ import TermsPage from "@/pages/TermsPage";
 import NotFound from "@/pages/not-found";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/ui/scroll-to-top";
 
 function Router() {
   return (
@@ -35,7 +36,9 @@ function App() {
   return (
     <TooltipProvider>
       <Toaster />
-      <Router />
+      <ScrollToTop>
+        <Router />
+      </ScrollToTop>
     </TooltipProvider>
   );
 }
